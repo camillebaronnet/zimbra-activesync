@@ -1,0 +1,22 @@
+<VirtualHost *:80>
+
+	ServerAdmin webmaster@localhost
+
+	Alias /Microsoft-Server-ActiveSync /home/www/public/index.php
+	AliasMatch (?i)/Autodiscover/Autodiscover.xml "/home/www/public/autodiscover/autodiscover.php"
+
+	DocumentRoot /home/www/public
+	<Directory /home/www/public/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+	
+	PHPINIDir /home/conf/
+
+	LogLevel error
+	ErrorLog /home/logs/error.log
+	CustomLog /home/logs/access.log combined
+
+</VirtualHost>
