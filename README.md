@@ -1,3 +1,8 @@
+[![Docker hub](https://img.shields.io/badge/docker%20pull-camillebaronnet%2Fzimbra--activezync-green.svg)](https://hub.docker.com/r/camillebaronnet/zimbra-activesync/)
+
+[![Website](https://img.shields.io/badge/website-camillebaronnet.fr-orange.svg)](https://www.camillebaronnet.fr/)
+[![Twitter](https://img.shields.io/badge/twitter-@camillebaronnet-blue.svg)](https://twitter.com/camillebaronnet)
+
 # ActiveSync for Zimbra with Z-push and Autodiscover
 
 ## Get started
