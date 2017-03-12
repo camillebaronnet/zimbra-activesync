@@ -2,11 +2,11 @@
 
 	ServerAdmin webmaster@localhost
 
-	Alias /Microsoft-Server-ActiveSync /home/www/public/index.php
-	AliasMatch (?i)/Autodiscover/Autodiscover.xml "/home/www/public/autodiscover/autodiscover.php"
+	Alias /Microsoft-Server-ActiveSync /var/www/html/index.php
+	AliasMatch (?i)/Autodiscover/Autodiscover.xml "/var/www/html/autodiscover/autodiscover.php"
 
-	DocumentRoot /home/www/public
-	<Directory /home/www/public/>
+	DocumentRoot /var/www/html
+	<Directory /var/www/html/>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride All
 		Order allow,deny

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed -i "s/#ZPUSH_HOST#/$ZPUSH_URL/" /home/www/public/config.php
-sed -i "s/#ZIMBRA_HOST#/$ZIMBRA_HOST/" /home/www/public/config.php
+sed -i "s/#ZPUSH_HOST#/$ZPUSH_URL/" /var/www/html/config.php
+sed -i "s/#ZIMBRA_HOST#/$ZIMBRA_HOST/" /var/www/html/config.php
 
-/usr/sbin/apache2 -D FOREGROUND
+apache2-foreground
