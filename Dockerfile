@@ -25,7 +25,9 @@ RUN sed -i "s/#ZIMBRA_HOST#/$ZIMBRA_HOST/" /var/www/html/config.php
 
 COPY autodiscover/ /var/www/html/autodiscover/
 COPY config.php /var/www/html/config.php
-COPY default.vhost /etc/apache2/sites-enabled/000-default
+COPY default.vhost /etc/apache2/sites-enabled/000-default.conf
+
+RUN a2enmod alias rewrite
 
 COPY ./startup.sh /root/startup.sh
 CMD ["/bin/bash", "/root/startup.sh"]
