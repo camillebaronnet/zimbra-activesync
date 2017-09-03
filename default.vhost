@@ -12,11 +12,5 @@
 		Order allow,deny
 		allow from all
 	</Directory>
-	
-	PHPINIDir /home/conf/
-
-	LogLevel error
-	ErrorLog /home/logs/error.log
-	CustomLog /home/logs/access.log combined
 
 </VirtualHost>
